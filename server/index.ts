@@ -2,7 +2,7 @@ import { Elysia, t } from "elysia";
 
 import { cors } from "@elysiajs/cors";
 import { staticPlugin } from "@elysiajs/static";
-import swagger from "@elysiajs/swagger";
+import { swagger } from "@elysiajs/swagger";
 
 import logger from "./logger";
 import { SignInDTO, UserTokenDTO, signIn } from "./signIn";
@@ -11,6 +11,7 @@ const port = process.env.PORT ?? 3000;
 const app = new Elysia()
   .use(staticPlugin())
   .use(
+    // @ts-expect-error Type error from swagger plugin
     swagger({
       documentation: {
         info: {
