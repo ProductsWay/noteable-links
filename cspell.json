@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "globRoot": ".",
+  "dictionaryDefinitions": [
+    {
+      "name": "notable-links",
+      "path": "./notable-links.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "notable-links"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "build",
+    "/notable-links.txt"
+  ]
+}
