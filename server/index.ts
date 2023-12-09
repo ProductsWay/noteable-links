@@ -11,7 +11,7 @@ const port = process.env.PORT ?? 3000;
 const app = new Elysia()
   .use(staticPlugin())
   .use(
-    // @ts-expect-error Type error from swagger plugin
+    // @ts-expect-error No overload matches this call.
     swagger({
       documentation: {
         info: {
@@ -26,8 +26,9 @@ const app = new Elysia()
       },
     }),
   )
+  // @ts-expect-error No overload matches this call.
   .use(cors())
-  .get("/hello", () => "Hello Elysia", {
+  .get("/", () => "Hello Elysia", {
     response: t.String({
       description: "Returns a string",
     }),
