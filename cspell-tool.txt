@@ -5,6 +5,7 @@ turso
 libsql
 autoincrement
 unixepoch
+bunx
 typecheck
 elysiajs
 pino
@@ -24,6 +25,6 @@ codepaths
 sweepai
 sandboxed
 docstrings
-bunx
 mdsvex
+Avenir
 Typecheck
